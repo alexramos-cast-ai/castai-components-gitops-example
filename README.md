@@ -1,0 +1,1 @@
+# castai-components-gitops-example
