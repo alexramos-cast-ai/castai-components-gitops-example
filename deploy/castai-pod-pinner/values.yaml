@@ -1,0 +1,8 @@
+managedByCASTAI: false
+castai:
+  apiURL: "https://api.cast.ai"
+  grpcURL: "grpc.cast.ai:443"
+  apiKeySecretRef: "apikey-secret"
+  clusterIdSecretKeyRef:
+    name: "clusterid-secret"
+    key: "CLUSTER_ID"
