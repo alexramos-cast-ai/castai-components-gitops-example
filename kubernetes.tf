@@ -75,7 +75,7 @@ resource "kubernetes_manifest" "castai_applicationset" {
 
 resource "kubernetes_secret" "castai-cluster-secret" {
   metadata {
-    name      = "castai-cluster-id"
+    name      = "castai-cluster-secret"
     namespace = "castai-agent"
   }
 

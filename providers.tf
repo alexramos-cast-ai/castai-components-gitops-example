@@ -1,6 +1,20 @@
+terraform {
+  required_providers {
+    castai = {
+      source = "castai/castai"
+      version = "7.44.0"
+    }
+  }
+}
+
 provider "aws" {
   region  = var.aws_cluster_region
   profile = var.profile
+}
+
+provider "castai" {
+  api_token = var.castai_api_token
+  api_url   = var.castai_api_url
 }
 
 provider "helm" {
@@ -27,3 +41,4 @@ provider "kubernetes" {
   }
   
 }
+
