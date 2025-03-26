@@ -65,3 +65,8 @@ variable "delete_nodes_on_disconnect" {
   description = "Optionally delete Cast AI created nodes when the cluster is destroyed"
   default     = false
 }
+
+variable "gitops_repo_url" {
+  type        = string
+  description = "URL of the gitops repository"
+}
