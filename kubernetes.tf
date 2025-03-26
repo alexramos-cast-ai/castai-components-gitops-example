@@ -25,6 +25,12 @@ resource "kubernetes_manifest" "castai_app_project" {
         "namespace" = "*"
         }
         ]
+      "clusterResourceWhitelist" = [
+        {
+        "group" = "*"
+        "kind" = "*"
+        }
+        ]
       }
     }
 }
