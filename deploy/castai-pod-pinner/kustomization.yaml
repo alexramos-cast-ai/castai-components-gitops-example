@@ -4,7 +4,7 @@ kind: Kustomization
 helmCharts:
   - name: castai-pod-pinner
     repo: https://castai.github.io/helm-charts
-    version: 1.2.0
+    version: 1.2.2
     releaseName: castai-pod-pinner
-    valuesFile: castai-pod-pinner-values.yaml
+    valuesFile: values.yaml
     namespace: castai-agent
