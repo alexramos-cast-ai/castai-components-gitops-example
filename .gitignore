@@ -1,7 +1,11 @@
 .vscode/
 .terraform/
+*/.terraform/
+*.tfplan
+*.tfplan.*
 *terraform.d/
-*crash.log
+*/.terraform.d/
+*/crash.log
 *.tfstate
 *.tfstate.lock.info
 *.tfstate.backup
