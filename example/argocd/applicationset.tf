@@ -35,8 +35,15 @@ resource "kubernetes_manifest" "castai_applicationset" {
             "server" = "https://kubernetes.default.svc"
             "namespace" = "castai-agent"
             }
+          "syncPolicy" = {
+            "automated" = {
+              "prune" = true
+              "selfHeal" = true
+            }
+          }
           }
         }
       }
     }
+    depends_on = [ kubernetes_manifest.castai_app_project ]
 }
